@@ -19,23 +19,21 @@ body {
 
 
 nav {
-    display: flex;
-    width: 100vw;
-    height: 10vh;
-    min-height: 50px;
-    align-items: center;
-    justify-content: center;
     background-color: hsl(131, 94%, 67%);
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    transition: height 0.3s ease;
 }
 
 .nav-header {
-    width: 30vw;
-    min-width: 200px;
+    width: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    padding: 10px;
 }
 
 .nav-header h1 {
@@ -46,9 +44,8 @@ nav {
 }
 
 .nav-links {
-    width: 70vw;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -88,13 +85,103 @@ nav {
 }
 
 .nav-toggle {
-    display: none;
+    margin-right: 20px;
+    scale: 1.4;
+    cursor: pointer;
 }
 
+.dropdown-menu {
+    height: 0px;
+    background-color: hsl(131, 94%, 67%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.dropdown-menu.open {
+    height: auto;
+}
+
+.dropdown-menu a {
+    color: purple;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-menu hr {
+    width: 100px;
+    border-color: purple;
+}
+
+.dropdown-menu a:hover {
+    color: white;
+    background-color: hsl(131, 94%, 48%);
+    cursor: pointer;
+}
+
+.dropdown-menu a:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #7a08cc;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.dropdown-menu a:hover:after {
+    transform: scaleX(1);
+}
+
+
+@media screen and (min-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    .nav-header {
+        width: 30vw;
+        height: 100%;
+    }
+
+    .nav-links {
+        width: 70vw;
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
 @media screen and (min-width: 800px) {
+    nav {
+        height: 50px;
+        transition: height 0.3s ease;
+    }
+
     .nav-header h1 {
         font-size: 1.6rem;
         transition: font-size 0.3s ease;
+    }
+
+    .nav-links {
+        display: flex;
     }
 
     .nav-links a {
