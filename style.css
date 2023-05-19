@@ -13,13 +13,13 @@
 
 
 body {
-    background-color: #ddf5d7;
+    background: linear-gradient(90deg, hsl(131, 94%, 47%), hsl(131, 94%, 77%));
     font-family: sans-serif;
 }
 
 
 nav {
-    background-color: hsl(131, 94%, 67%);
+    /* background-color: hsl(131, 94%, 67%); */
     display: flex;
     position: relative;
     width: 100vw;
@@ -40,7 +40,7 @@ nav {
     font-size: 1.3rem;
     transition: 0.3s ease;
     font-family: 'Fragment Mono', monospace;
-    color: #13529e;
+    color: #2457be;
 }
 
 .nav-links {
