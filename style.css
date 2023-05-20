@@ -13,13 +13,14 @@
 
 
 body {
-    background: linear-gradient(90deg, hsl(131, 94%, 47%), hsl(131, 94%, 77%));
+    background: linear-gradient(90deg, #daf5e1, #f1f7e4);
+    /* background-color: #E6FFFD; */
     font-family: sans-serif;
 }
 
 
 nav {
-    /* background-color: hsl(131, 94%, 67%); */
+    /* background: linear-gradient(90deg, #daf5e1, #f1f7e4); */
     display: flex;
     position: relative;
     width: 100vw;
@@ -63,8 +64,8 @@ nav {
 }
 
 .nav-links a:hover {
-    color: white;
-    background-color: hsl(131, 94%, 48%);
+    color: #2457be;
+    /* background-color: #D0F5BE; */
     cursor: pointer;
 }
 
@@ -189,4 +190,43 @@ nav {
         padding: 0 10px;
         transition: font-size 0.3s ease, padding 0.3s ease;
     }
+}
+
+
+/* Main */
+main {
+    width: 100vw;
+    height: calc(100vh - 120px);
+}
+
+
+/* Footer */
+footer {
+    /* background: linear-gradient(90deg, #98EECC, #D0F5BE); */
+    width: 100vw;
+    height: 70px;
+}
+
+.footer-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+.social-icons i {
+    scale: 1.5;
+    cursor: pointer;
+}
+
+.footer-container p {
+    font-size: 0.75rem;
 }
