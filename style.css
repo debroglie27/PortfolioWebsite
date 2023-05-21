@@ -14,13 +14,12 @@
 
 body {
     background: linear-gradient(90deg, #daf5e1, #f1f7e4);
-    /* background-color: #E6FFFD; */
     font-family: sans-serif;
 }
 
 
 nav {
-    /* background: linear-gradient(90deg, #daf5e1, #f1f7e4); */
+    box-shadow: 0px -8px 23px 0px rgba(0,0,0,0.16);
     display: flex;
     position: relative;
     width: 100vw;
@@ -65,7 +64,6 @@ nav {
 
 .nav-links a:hover {
     color: #2457be;
-    /* background-color: #D0F5BE; */
     cursor: pointer;
 }
 
@@ -202,9 +200,9 @@ main {
 
 /* Footer */
 footer {
-    /* background: linear-gradient(90deg, #98EECC, #D0F5BE); */
     width: 100vw;
     height: 70px;
+    box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.16);
 }
 
 .footer-container {
@@ -219,7 +217,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 15px;
+    padding: 18px;
 }
 
 .social-icons i {
