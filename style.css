@@ -13,12 +13,13 @@
 
 
 body {
-    background: linear-gradient(90deg, #daf5e1, #f1f7e4);
+    /* background: linear-gradient(90deg, #daf5e1, #f1f7e4); */
     font-family: sans-serif;
 }
 
 
 nav {
+    background: linear-gradient(90deg, #daf5e1, #f1f7e4);
     box-shadow: 0px -8px 23px 0px rgba(0,0,0,0.16);
     display: flex;
     position: relative;
@@ -193,13 +194,22 @@ nav {
 
 /* Main */
 main {
+    background-color: #edfaef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: calc(100vh - 120px);
+}
+
+.text-container {
+    width: 45%;
 }
 
 
 /* Footer */
 footer {
+    background: linear-gradient(90deg, #daf5e1, #f1f7e4);
     width: 100vw;
     height: 70px;
     box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.16);
