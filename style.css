@@ -19,7 +19,8 @@ body {
 
 
 nav {
-    background: linear-gradient(90deg, #daf5e1, #f1f7e4);
+    background-color: #fafafa;
+    /* background: linear-gradient(90deg, #daf5e1, #f1f7e4); */
     box-shadow: 0px -8px 23px 0px rgba(0,0,0,0.16);
     display: flex;
     position: relative;
@@ -194,7 +195,7 @@ nav {
 
 /* Main */
 main {
-    background-color: #edfaef;
+    /* background-color: #fafafa; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +210,8 @@ main {
 
 /* Footer */
 footer {
-    background: linear-gradient(90deg, #daf5e1, #f1f7e4);
+    background-color: #fafafa;
+    /* background: linear-gradient(90deg, #daf5e1, #f1f7e4); */
     width: 100vw;
     height: 70px;
     box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.16);
@@ -227,12 +229,40 @@ footer {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 18px;
+    padding: 15px;
 }
 
 .social-icons i {
-    scale: 1.5;
+    scale: 1.7;
     cursor: pointer;
+}
+
+.facebook-icon:hover {
+    background: -moz-linear-gradient(#17A9FD, #0165E1);
+    background: -webkit-linear-gradient(#17A9FD, #0165E1);
+    background: linear-gradient(#17A9FD, #0165E1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instagram-icon:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: -moz-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.github-icon:hover {
+    color: #6cc644;
+}
+
+.linkedin-icon:hover {
+    color: #0A66C2;
 }
 
 .footer-container p {
