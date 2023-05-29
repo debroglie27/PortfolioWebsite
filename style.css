@@ -14,12 +14,14 @@
 
 body {
     font-family: sans-serif;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 
 nav {
     background-color: #effceb;
-    /* background: linear-gradient(90deg, #daf5e1, #f1f7e4); */
     box-shadow: 0px -8px 23px 0px rgba(0,0,0,0.16);
     display: flex;
     position: relative;
@@ -92,7 +94,7 @@ nav {
 
 .dropdown-menu {
     height: 0px;
-    background-color: hsl(131, 94%, 67%);
+    background-color: #effceb;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -110,6 +112,7 @@ nav {
 }
 
 .dropdown-menu a {
+    font-size: 1.1rem;
     color: purple;
     padding: 10px;
     position: relative;
@@ -122,8 +125,7 @@ nav {
 }
 
 .dropdown-menu a:hover {
-    color: white;
-    background-color: hsl(131, 94%, 48%);
+    color: #2457be;
     cursor: pointer;
 }
 
@@ -194,17 +196,11 @@ nav {
 
 /* Main */
 main {
-    /* background-color: #fafafa; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    min-height: calc(100vh - 90px);
-    padding: 0 8%;
-}
-
-.main-content {
-    border: 1px solid red;
+    min-height: calc(100vh - 100px);
 }
 
 .main-content h1 {
@@ -219,13 +215,9 @@ main {
     margin-bottom: 10px;
 }
 
-.main-content h3 {
-    margin-bottom: 10px;
-}
-
-.text-container {
+/* .text-container {
     width: 55%;
-}
+} */
 
 @media screen and (min-width: 800px) {
     main {
@@ -238,9 +230,8 @@ main {
 /* Footer */
 footer {
     background-color: #effceb;
-    /* background: linear-gradient(90deg, #daf5e1, #f1f7e4); */
     width: 100vw;
-    height: 50px;
+    height: 60px;
     box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.16);
 }
 
@@ -256,7 +247,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 10px;
+    padding: 12px;
 }
 
 .social-icons i {
@@ -292,7 +283,7 @@ footer {
     color: #0A66C2;
 }
 
-.footer-container p {
+.footer-container .copyright {
     font-size: 0.65rem;
 }
 
@@ -309,7 +300,7 @@ footer {
         scale: 1.7;
     }
 
-    .footer-container p {
+    .footer-container .copyright {
         font-size: 0.75rem;
     }
 }
