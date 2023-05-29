@@ -15,8 +15,10 @@
 body {
     font-family: sans-serif;
     width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -200,7 +202,6 @@ main {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    min-height: calc(100vh - 100px);
 }
 
 .main-content h1 {
@@ -215,14 +216,9 @@ main {
     margin-bottom: 10px;
 }
 
-/* .text-container {
-    width: 55%;
-} */
 
 @media screen and (min-width: 800px) {
-    main {
-        min-height: calc(100vh - 120px);
-    }
+    
 }
 
 
@@ -232,6 +228,7 @@ footer {
     background-color: #effceb;
     width: 100vw;
     height: 60px;
+    transition: height 0.3s ease;
     box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.16);
 }
 
@@ -246,12 +243,14 @@ footer {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     padding: 12px;
+    transition: gap 0.3s ease, padding 0.3s ease;
 }
 
 .social-icons i {
     scale: 1.4;
+    transition: scale 0.3s ease;
     cursor: pointer;
 }
 
@@ -290,14 +289,18 @@ footer {
 @media screen and (min-width: 800px) {
     footer {
         height: 70px;
+        transition: height 0.3s ease;
     }
 
     .social-icons {
+        gap: 30px;
         padding: 15px;
+        transition: gap 0.3s ease, padding 0.3s ease;
     }
 
     .social-icons i {
         scale: 1.7;
+        transition: scale 0.3s ease;
     }
 
     .footer-container .copyright {
