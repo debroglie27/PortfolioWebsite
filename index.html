@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
 
-    <link rel="stylesheet" href="../Font-Awesome/css/all.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   </head>
   <body>
     <nav>
@@ -61,18 +62,13 @@
       </div>
     </main>
 
-    <footer>
-      <div class="footer-container">
-        <div class="social-icons">
-          <a href="https://www.facebook.com/arijeet.de"><i class="fa-brands fa-facebook facebook-icon"></i></a>
-          <a href="https://www.instagram.com/121debroglie/"><i class="fa-brands fa-instagram instagram-icon"></i></a>
-          <a href="https://github.com/debroglie27"><i class="fa-brands fa-github github-icon"></i></a>
-          <a href="https://www.linkedin.com/in/arijeet-de-6597721b3/"><i class="fa-brands fa-linkedin linkedin-icon"></i></a>
-        </div>
-        <p class="copyright">© 2023 Arijeet De.</p>
-      </div>
-    </footer>
+    <footer></footer>
 
     <script src="./app.js"></script>
+    <script>
+      $(document).ready(function () {
+          $('footer').load('./html/footer.html');
+      });
+    </script>
   </body>
 </html>
