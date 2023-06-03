@@ -32,10 +32,6 @@ nav {
     align-items: center;
 }
 
-.nav-links .active {
-    color: #2457be;
-}
-
 .nav-links .active:before {
     content: "";
     width: 100%;
