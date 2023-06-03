@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    $path = ''
-    if (document.title === 'Home Page')
-        $path = './html/footer.html';
-    else
-        $path = './footer.html';
-
+    $path = './html/footer.html';
     $('footer').load($path);
 });
