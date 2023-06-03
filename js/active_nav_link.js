@@ -4,10 +4,9 @@ projects = document.getElementById('projects')
 education = document.getElementById('education')
 skills = document.getElementById('skills')
 contact = document.getElementById('contact')
-console.log(document.location)
 
-switch(document.location.pathname.split('.')[0].slice(1)) {
-    case "index": home.classList.add('active'); break;
+switch(document.location.pathname.split('/').pop().split('.')[0]) {
+    case "": home.classList.add('active'); break;
     case "about": about.classList.add('active'); break;
     case "projects": projects.classList.add('active'); break;
     case "education": education.classList.add('active'); break;
