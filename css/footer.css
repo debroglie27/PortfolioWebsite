@@ -1,10 +1,10 @@
 /* Footer */
 footer {
-    background-color: #effceb;
+    background-color: var(--color-footer);
     width: 100vw;
     height: 60px;
     transition: height 0.3s ease;
-    box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.16);
+    box-shadow: var(--box-shadow-footer);
 }
 
 .footer-container {

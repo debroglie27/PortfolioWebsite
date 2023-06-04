@@ -8,6 +8,10 @@
     --color-nav-links: purple;
     --color-nav-links-underline: #7a08cc;
     --color-nav-links-hover: #2457be;
+
+    /* For Footer */
+    --color-footer: #effceb;
+    --box-shadow-footer: 0px 8px 23px 0px rgba(0,0,0,0.16);
 }
 
 
