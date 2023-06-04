@@ -1,7 +1,7 @@
 /* Navbar */
 nav {
-    background-color: #effceb;
-    box-shadow: 0px -8px 23px 0px rgba(0,0,0,0.16);
+    background-color: var(--color-nav);
+    box-shadow: var(--box-shadow-nav);
     display: flex;
     position: relative;
     width: 100vw;
@@ -22,7 +22,7 @@ nav {
     font-size: 1.3rem;
     transition: 0.3s ease;
     font-family: 'Fragment Mono', monospace;
-    color: #2457be;
+    color: var(--color-nav-header-h1);
 }
 
 .nav-links {
@@ -36,7 +36,7 @@ nav {
     content: "";
     width: 100%;
     height: 3px;
-    background-color: #7a08cc;
+    background-color: var(--color-nav-links-underline);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -45,7 +45,7 @@ nav {
 .nav-links a {
     height: 100%;
     font-size: 1.1rem;
-    color: purple;
+    color: var(--color-nav-links);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@ nav {
 }
 
 .nav-links a:not(.active):hover {
-    color: #2457be;
+    color: var(--color-nav-links-hover);
     cursor: pointer;
 }
 
@@ -63,7 +63,7 @@ nav {
     content: "";
     width: 100%;
     height: 3px;
-    background-color: #7a08cc;
+    background-color: var(--color-nav-links-underline);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -83,7 +83,7 @@ nav {
 
 .dropdown-menu {
     height: 0px;
-    background-color: #effceb;
+    background-color: var(--color-nav);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -102,19 +102,14 @@ nav {
 
 .dropdown-menu a {
     font-size: 1.1rem;
-    color: purple;
+    color: var(--color-nav-links);
     padding: 10px;
     position: relative;
     width: 100%;
 }
 
-.dropdown-menu hr {
-    width: 100px;
-    border-color: purple;
-}
-
 .dropdown-menu a:hover {
-    color: #2457be;
+    color: var(--color-nav-links-hover);
     cursor: pointer;
 }
 
@@ -122,7 +117,7 @@ nav {
     content: "";
     width: 100%;
     height: 2px;
-    background-color: #7a08cc;
+    background-color: var(--color-nav-links-underline);
     position: absolute;
     left: 0;
     bottom: 0;
