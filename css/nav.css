@@ -19,7 +19,7 @@ nav {
 }
 
 .nav-header h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     transition: 0.3s ease;
     font-family: 'Fragment Mono', monospace;
     color: var(--color-nav-header-h1);
