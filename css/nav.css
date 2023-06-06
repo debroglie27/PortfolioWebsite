@@ -1,4 +1,13 @@
 /* Navbar */
+:root {
+    --color-nav: #effceb;
+    --box-shadow-nav: 0px -8px 23px 0px rgba(0,0,0,0.16);
+    --color-nav-header-h1: #2457be;
+    --color-nav-links: purple;
+    --color-nav-links-underline: #7a08cc;
+    --color-nav-links-hover: #2457be;
+}
+
 nav {
     background-color: var(--color-nav);
     box-shadow: var(--box-shadow-nav);

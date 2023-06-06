@@ -1,4 +1,9 @@
 /* Footer */
+:root {
+    --color-footer: #effceb;
+    --box-shadow-footer: 0px 8px 23px 0px rgba(0,0,0,0.16);
+}
+
 footer {
     background-color: var(--color-footer);
     width: 100vw;
