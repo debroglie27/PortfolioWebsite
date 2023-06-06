@@ -7,7 +7,14 @@ main {
 }
 
 .main-content {
-    padding: 15px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.text-container {
+    max-width: 550px;
 }
 
 .text-container h1 {
@@ -29,9 +36,29 @@ main {
     text-align: justify;
 }
 
-
+.image-container{
+    display: none;
+}
 
 
 @media screen and (min-width: 800px) {
-    
+    .main-content {
+        gap: 5%;
+    }
+
+    .text-container h1 {
+        font-size: 2.4rem;
+    }
+
+    .text-container h2 {
+        font-size: 1.9rem;
+    }
+
+    .image-container {
+        display: block;
+    }
+
+    .image-container img {
+        width: 400px;
+    }
 }

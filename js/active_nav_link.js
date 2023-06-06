@@ -1,9 +1,9 @@
-home = document.getElementById('home')
-about = document.getElementById('about')
-projects = document.getElementById('projects')
-education = document.getElementById('education')
-skills = document.getElementById('skills')
-contact = document.getElementById('contact')
+home = document.getElementById('home');
+about = document.getElementById('about');
+projects = document.getElementById('projects');
+education = document.getElementById('education');
+skills = document.getElementById('skills');
+contact = document.getElementById('contact');
 
 switch(document.location.pathname.split('/').pop().split('.')[0]) {
     case "": home.classList.add('active'); break;
