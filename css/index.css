@@ -7,9 +7,11 @@ main {
 }
 
 .main-content {
+    width: 100%;
+    max-width: 1080px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 15px;
 }
 
@@ -43,7 +45,11 @@ main {
 
 @media screen and (min-width: 800px) {
     .main-content {
-        gap: 5%;
+        justify-content: space-between;
+    }
+
+    .text-container {
+        margin-right: 10px;
     }
 
     .text-container h1 {
@@ -56,6 +62,7 @@ main {
 
     .image-container {
         display: block;
+        margin-left: 10px;
     }
 
     .image-container img {
