@@ -4,6 +4,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    flex-grow: 1;
 }
 
 .main-content {
