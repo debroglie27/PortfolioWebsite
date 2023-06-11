@@ -24,6 +24,8 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .image-container {
@@ -35,7 +37,7 @@ main {
 .image-container img {
     width: 120px;
     border-radius: 50%;
-    border: 1px solid #2a69c7;
+    border: 1px solid #2457be;
 }
 
 .text-container {
@@ -55,13 +57,13 @@ main {
     margin-bottom: 10px;
 }
 
-.text-container p {
+.text-container .result {
     margin-bottom: 4px;
 }
 
 .text-container p .result-highlight {
     color: #a302e3;
-    font-size: 1.06rem;
+    font-size: 1.05rem;
 }
 
 .text-container .btn {
@@ -81,6 +83,20 @@ main {
     background: transparent;
     color: #02c26b;
     text-decoration: none;
+}
+
+.text-container .year-container {
+    background-color: #d4e5ff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 10px 8px 10px;
+    border-radius: 8px 0 0 0;
+}
+
+.text-container .year-container p {
+    font-size: 0.82rem;
+    color: #2457be;
 }
 
 
