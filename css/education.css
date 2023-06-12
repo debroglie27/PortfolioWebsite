@@ -17,7 +17,6 @@ main {
 }
 
 .card-container {
-    background-color: #f5f8fc;
     border-radius: 8px;
     width: 420px;
     display: flex;
@@ -26,6 +25,9 @@ main {
     padding: 10px;
     position: relative;
     overflow: hidden;
+    -webkit-box-shadow: 0 0 20px -10px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 0 20px -10px rgba(0,0,0,0.25);
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.25);
 }
 
 .image-container {
@@ -37,7 +39,7 @@ main {
 .image-container img {
     width: 120px;
     border-radius: 50%;
-    border: 1px solid #2457be;
+    border: 1px solid black;
 }
 
 .text-container {
