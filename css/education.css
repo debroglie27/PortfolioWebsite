@@ -12,13 +12,13 @@ main {
 
 .main-content {
     display: grid;
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
     gap: 20px;
 }
 
 .card-container {
     border-radius: 8px;
-    width: 420px;
+    width: 380px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +37,7 @@ main {
 }
 
 .image-container img {
-    width: 120px;
+    width: 105px;
     border-radius: 50%;
     border: 1px solid black;
 }
@@ -50,32 +50,35 @@ main {
 }
 
 .text-container h2 {
+    font-size: 1.3rem;
     font-weight: normal;
     font-family: 'Kalam', cursive;
 }
 
 .text-container h3 {
+    font-size: 1.05rem;
     color: #2457be;
     margin-bottom: 10px;
 }
 
 .text-container .result {
+    font-size: 0.9rem;
     margin-bottom: 4px;
 }
 
-.text-container p .result-highlight {
-    color: #a302e3;
-    font-size: 1.05rem;
+.text-container .result .result-highlight {
+    color: green;
+    font-size: 0.95rem;
 }
 
 .text-container .btn {
-    width: 50%;
+    width: 98px;
     background: #02c26b;
     border: 2px solid #02c26b;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 0.7rem;
     font-family: 'Quicksand', sans-serif;
-    padding: 6px 10px 6px 10px;
+    padding: 4px 6px 4px 6px;
     text-decoration: none;
     text-align: center;
 }
@@ -92,15 +95,54 @@ main {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 8px 10px 8px 10px;
+    padding: 6px 8px 6px 8px;
     border-radius: 8px 0 0 0;
 }
 
 .text-container .year-container p {
-    font-size: 0.82rem;
+    font-size: 0.76rem;
     color: #2457be;
 }
 
+@media screen and (min-width:600px){
+    .card-container {
+        width: 420px;
+    }
+
+    .image-container img {
+        width: 120px;
+    }
+
+    .text-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-container h3 {
+        font-size: 1.17rem;
+    } 
+
+    .text-container .result {
+        font-size: 1rem;
+    }
+
+    .text-container .result .result-highlight {
+        font-size: 1.05rem;
+    }
+
+    .text-container .btn {
+        width: 50%;
+        font-size: 0.8125rem;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .text-container .year-container {
+        padding: 8px 10px 8px 10px;
+    }
+    
+    .text-container .year-container p {
+        font-size: 0.82rem;
+    }
+}
 
 @media screen and (min-width:900px){
     .main-content {
