@@ -12,13 +12,13 @@ main {
 
 .main-content {
     display: grid;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 8px 20px 8px;
     gap: 20px;
 }
 
 .card-container {
     border-radius: 8px;
-    width: 380px;
+    width: 360px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +43,7 @@ main {
 }
 
 .text-container {
-    width: 60%;
+    width: 63%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,6 +111,10 @@ main {
 
     .image-container img {
         width: 120px;
+    }
+
+    .text-container {
+        width: 60%;
     }
 
     .text-container h2 {
