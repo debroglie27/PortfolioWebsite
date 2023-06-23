@@ -28,6 +28,7 @@ main {
 }
 
 .card-container {
+    background-color: white;
     border-radius: 8px;
     width: 360px;
     display: flex;
