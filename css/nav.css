@@ -3,6 +3,9 @@
     --color-nav-header-h1: #2457be;
     --color-nav-links: purple;
     --color-nav-links-underline: #7a08cc;
+    --color-dropdown-menu-border: #efefef;
+
+    --box-shadow-dropdown-menu: 0px 0px 10px 0px rgba(0,0,0,0.12);
 }
 
 nav {
@@ -25,7 +28,7 @@ nav {
 }
 
 .nav-header h1 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     transition: 0.3s ease;
     font-family: 'Fragment Mono', monospace;
     color: var(--color-nav-header-h1);
@@ -79,37 +82,44 @@ nav {
 }
 
 .nav-toggle {
-    margin-right: 20px;
-    scale: 1.4;
+    margin-right: 18px;
+    scale: 1.6;
     cursor: pointer;
 }
 
 .dropdown-menu {
     height: 0px;
-    background-color: var(--color-nav);
+    background-color: white;
     border-radius: 10px;
+    box-shadow: var(--box-shadow-dropdown-menu);
     display: flex;
     flex-direction: column;
     position: absolute;
-    text-align: center;
     top: 50px;
     right: 10px;
     width: 200px;
     font-size: 1.1rem;
     overflow: hidden;
     z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .dropdown-menu.open {
-    height: auto;
+    height: 300px;
+    opacity: 100%;
 }
 
 .dropdown-menu a {
     font-size: 1.1rem;
     color: var(--color-nav-links);
-    padding: 10px;
+    height: 50px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    border-bottom: 1px solid var(--color-dropdown-menu-border);
 }
 
 .dropdown-menu a:hover {
@@ -148,7 +158,7 @@ nav {
     }
 
     .nav-header h1 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     .nav-links a {
