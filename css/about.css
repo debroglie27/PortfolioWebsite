@@ -1,14 +1,3 @@
-/* Navbar Portion */
-#about:before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-nav-links-underline);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
 /* Main */
 main {
     display: flex;
