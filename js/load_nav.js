@@ -1,4 +1,4 @@
 $(document).ready(function () {
-    $path = './html/nav.html';
+    $path = './nav.html';
     $('nav').load($path);
 });

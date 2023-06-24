@@ -1,4 +1,4 @@
 $(document).ready(function () {
-    $path = './html/footer.html';
+    $path = './footer.html';
     $('footer').load($path);
 });

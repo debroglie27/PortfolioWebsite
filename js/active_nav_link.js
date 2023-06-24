@@ -6,7 +6,7 @@ skills = document.getElementById('skills');
 contact = document.getElementById('contact');
 
 switch(document.location.pathname.split('/').pop().split('.')[0]) {
-    case "": home.classList.add('active'); break;
+    case "home": home.classList.add('active'); break;
     case "about": about.classList.add('active'); break;
     case "projects": projects.classList.add('active'); break;
     case "education": education.classList.add('active'); break;
