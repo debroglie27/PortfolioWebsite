@@ -59,36 +59,52 @@ main {
 .text-container h3 {
     font-size: 1.05rem;
     color: #2457be;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .text-container .result {
     font-size: 0.9rem;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .text-container .result .result-highlight {
     color: green;
-    font-size: 0.95rem;
+    font-weight: bold;
 }
 
-.text-container .btn {
-    width: 98px;
-    background: #02c26b;
-    border: 2px solid #02c26b;
-    color: #ffffff;
-    font-size: 0.7rem;
-    font-family: 'Quicksand', sans-serif;
-    padding: 4px 6px 4px 6px;
-    text-decoration: none;
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.marks-btn {
+    border: 2px solid #20d438;
+    background-color: #20d438;
+    color: white;
+    font-size: 0.65rem;
+    padding: 7px 12px 7px 12px;
+    margin-right: 8px;
     text-align: center;
 }
 
-.text-container .btn:hover {
-    cursor: pointer;
-    background: transparent;
-    color: #02c26b;
-    text-decoration: none;
+.marks-btn:hover {
+    border: 2px solid #20d438;
+    background-color: white;
+    color: #20d438;
+}
+
+.degree-btn {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.degree-btn:hover {
+    background-color: #d4e5ff;
+}
+
+.degree-btn i {
+    transform: scale(1);
 }
 
 .text-container .year-container {
@@ -115,7 +131,7 @@ main {
     }
 
     .text-container {
-        width: 60%;
+        width: 64%;
     }
 
     .text-container h2 {
@@ -128,16 +144,30 @@ main {
 
     .text-container .result {
         font-size: 1rem;
+        margin-bottom: 10px;
     }
 
     .text-container .result .result-highlight {
         font-size: 1.05rem;
     }
 
-    .text-container .btn {
-        width: 50%;
-        font-size: 0.8125rem;
-        padding: 6px 10px 6px 10px;
+    .marks-btn {
+        font-size: 0.75rem;
+        padding: 9px 14px 9px 14px;
+        margin-right: 10px;
+    }
+
+    .degree-btn {
+        padding: 8px;
+        border-radius: 50%;
+    }
+
+    .degree-btn:hover {
+        background-color: #d4e5ff;
+    }
+
+    .degree-btn i {
+        transform: scale(1.2);
     }
 
     .text-container .year-container {
