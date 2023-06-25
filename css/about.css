@@ -8,13 +8,9 @@ main {
 }
 
 .main-content {
-    background-color: white;
     width: 100%;
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
-    -webkit-box-shadow: 0 0 20px -10px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0 0 20px -10px rgba(0,0,0,0.25);
-    box-shadow: 0 0 20px -10px rgba(0,0,0,0.25);
 }
 
 .top-container {
@@ -65,9 +61,10 @@ main {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 620px){
+
+@media screen and (min-width: 600px){
     .main-content {
-        width: 600px;
+        max-width: 800px;
         padding: 20px 30px 20px 30px;
     }
 
