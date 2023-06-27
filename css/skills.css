@@ -11,11 +11,14 @@ main {
     width: 100%;
     max-width: 700px;
     padding: 15px 20px 15px 20px;
-    border: 1px solid red;
+}
+
+.main-content h2 {
+    color: #2457be;
 }
 
 .programming-container {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .programming-container h2 {
@@ -26,4 +29,45 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.certifications-container h2 {
+    margin-bottom: 20px;
+}
+
+.certifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.internship {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.15);
+}
+
+.link-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.link-container p {
+    margin-right: 20px;
 }
