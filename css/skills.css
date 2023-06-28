@@ -9,8 +9,8 @@ main {
 
 .main-content {
     width: 100%;
-    max-width: 700px;
-    padding: 15px 20px 15px 20px;
+    max-width: 880px;
+    padding: 50px 20px 30px 20px;
 }
 
 .main-content h2 {
@@ -35,10 +35,6 @@ main {
     margin-bottom: 15px;
 }
 
-.internship {
-    grid-row: span 2;
-}
-
 .grid-container {
     width: 100%;
     display: grid;
@@ -47,19 +43,58 @@ main {
 }
 
 .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
-    padding: 15px;
+    padding: 18px;
     border-radius: 8px;
     -webkit-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.4);
     box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.15);
 }
 
-.link-container {
-    display: flex;
-    margin-top: 10px;
+.card-container h3 {
+    color: #444444;
 }
 
-.link-container p {
-    margin-right: 20px;
+.internship {
+    grid-row: span 2;
+}
+
+.internship h3 {
+    margin-bottom: 12px;
+}
+
+.internship .summary {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.internship .project-list {
+    font-size: 0.9rem;
+    padding-inline-start: 30px;
+}
+
+.internship .project-list li {
+    margin-bottom: 2px;
+    list-style: disc;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.link-container .institute {
+    color: #858585;
+}
+
+.link-container .link {
+    color: #829db5;
+}
+
+.link-container .link:hover {
+    color: #014c91;
 }
