@@ -29,7 +29,7 @@ Welcome to my Portfolio Website. Get to know about me by going through my websit
 
 ### Education Page
 
-### Skilla Page
+### Skills Page
 
 ### Contact Page
 
