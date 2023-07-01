@@ -7,7 +7,8 @@ const certificationList = [
     },
     {
         "id": 2,
-        "title": "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
+        "title": "Improving Deep Neural Networks",
+        // "title": "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
         "institute": "Coursera",
         "link": "https://drive.google.com/file/d/1CSmSqhdDw3AcAEQ20kFh7HxqCCcbe_L_/view?usp=sharing"
     },
