@@ -1,3 +1,10 @@
+:root {
+    --primary-color-all: #e30202;
+    --primary-color-web: #2d45b3;
+    --primary-color-software: #9e2eb8;
+    --primary-color-game: #1eab16;
+}
+
 /* Main */
 main {
     display: flex;
@@ -11,27 +18,80 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 10px 40px 10px;
+    padding: 50px 10px 40px 10px;
 }
 
 .category-container {
+    width: 100%;
     font-size: 1.06rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 35px;
-    margin-bottom: 50px;
+    padding: 10px 0;
+    margin-bottom: 40px;
 }
 
-.category-container li {
-    background-color: azure;
-    color: blueviolet;
-    border: 1px solid blueviolet;
-    border-radius: 10px;
-    padding: 5px 10px;
+.category-item {
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 5px 12px;
     cursor: pointer;
 }
 
+.active-item {
+    -webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.4);
+}
+
+/* All Category */
+.all-category {
+    border-color: var(--primary-color-all);
+    color: var(--primary-color-all);
+}
+
+.all-category:hover {
+    background-color: var(--primary-color-all);
+    color: white;
+}
+
+/* Web Category */
+.web-category {
+    border-color: var(--primary-color-web);
+    color: var(--primary-color-web);
+}
+
+.web-category:hover {
+    background-color: var(--primary-color-web);
+    color: white;
+}
+
+/* Software Category */
+.software-category {
+    border-color: var(--primary-color-software);
+    color: var(--primary-color-software);
+}
+
+.software-category:hover {
+    background-color: var(--primary-color-software);
+    color: white;
+}
+
+/* Game Category */
+.game-category {
+    border-color: var(--primary-color-game);
+    color: var(--primary-color-game);
+}
+
+.game-category:hover {
+    background-color: var(--primary-color-game);
+    color: white;
+}
+
+/* Project Grid Container */
 .grid-container {
     width: 100%;
     display: grid;
@@ -78,5 +138,5 @@ main {
 }
 
 .text-container .link:hover {
-    color: #014c91;
+    color: #0023bf;
 }
