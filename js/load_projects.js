@@ -2,12 +2,13 @@ import { projectList } from "./project_list.js";
 
 const gridContainer = document.querySelector(".grid-container");
 
-function createCardContainer(title, summary, link) {
+function createCardContainer(title, category, summary, link) {
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card-container');
 
     const headerContainer = document.createElement('div');
     headerContainer.classList.add('header-container');
+    headerContainer.classList.add(`${category}-project`);
 
     const projectTitle = document.createElement('h2');
     projectTitle.textContent = title;
@@ -38,7 +39,7 @@ function createCardContainer(title, summary, link) {
 
 function loadProjects() {
 	projectList.forEach(item => {
-        createCardContainer(item["title"], item["summary"], item["link"]);
+        createCardContainer(item["title"], item['category'], item["summary"], item["link"]);
     });
 }
 

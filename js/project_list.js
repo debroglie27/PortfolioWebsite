@@ -1,43 +1,43 @@
 const projectList = [
     {
-        title: "Project Title",
-        category: "",
+        title: "Portfolio Website",
+        category: "web",
         summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
         Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
         rerum ratione magnam nam quod.",
-        link: "#",
+        link: "https://github.com/debroglie27/Portfolio_Website",
     },
     {
-        title: "Project Title",
-        category: "",
+        title: "Age Calculator App",
+        category: "web",
         summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
         Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
         rerum ratione magnam nam quod.",
-        link: "#",
+        link: "https://github.com/debroglie27/AgeCalculatorApp",
     },
     {
-        title: "Project Title",
-        category: "",
+        title: "QR Code Component",
+        category: "web",
         summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
         Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
         rerum ratione magnam nam quod.",
-        link: "#",
+        link: "https://github.com/debroglie27/QRCodeComponent",
     },
     {
-        title: "Project Title",
-        category: "",
+        title: "Single Price Grid Component",
+        category: "web",
         summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
         Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
         rerum ratione magnam nam quod.",
-        link: "#",
+        link: "https://github.com/debroglie27/SinglePriceGridComponent",
     },
     {
-        title: "Project Title",
-        category: "",
+        title: "Testimonials Grid Section",
+        category: "web",
         summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
         Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
         rerum ratione magnam nam quod.",
-        link: "#",
+        link: "https://github.com/debroglie27/TestimonialsGridSection",
     },
 ];
 
