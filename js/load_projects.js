@@ -1,5 +1,10 @@
 import { projectList } from "./project_list.js";
 
+const allCategory = document.querySelector('.all-category');
+const webCategory = document.querySelector('.web-category');
+const softwareCategory = document.querySelector('.software-category');
+const gameCategory = document.querySelector('.game-category');
+
 const gridContainer = document.querySelector(".grid-container");
 
 function createCardContainer(title, category, summary, link) {
@@ -37,10 +42,30 @@ function createCardContainer(title, category, summary, link) {
     gridContainer.appendChild(cardContainer);
 }
 
-function loadProjects() {
+function loadProjects(category) {
+    gridContainer.innerHTML = '';
+
 	projectList.forEach(item => {
-        createCardContainer(item["title"], item['category'], item["summary"], item["link"]);
+        // Load either every project when category -> 'all' or the category specified
+        if (category === "all" || (item['category'] === category)) {
+            createCardContainer(item["title"], item['category'], item["summary"], item["link"]);
+        }
     });
 }
 
-loadProjects();
+function changeCategory() {
+    // Removing the active-item class from current category
+    document.querySelector('.active-item').classList.remove('active-item');
+    // Adding the active-item class to selected category
+    this.classList.add('active-item');
+
+    // Loading Projects of the Category selected
+    loadProjects(this.id);
+}
+
+allCategory.addEventListener('click', changeCategory);
+webCategory.addEventListener('click', changeCategory);
+softwareCategory.addEventListener('click', changeCategory);
+gameCategory.addEventListener('click', changeCategory);
+
+loadProjects("all");

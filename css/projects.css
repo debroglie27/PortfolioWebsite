@@ -22,7 +22,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 10px 40px 10px;
+    padding: 40px 10px 40px 10px;
 }
 
 .category-container {
@@ -73,7 +73,7 @@ main {
 }
 
 .web-category.active-item {
-    background-color: var(--primary-color-all);
+    background-color: var(--primary-color-web);
     color: white;
 }
 
@@ -89,7 +89,7 @@ main {
 }
 
 .software-category.active-item {
-    background-color: var(--primary-color-all);
+    background-color: var(--primary-color-software);
     color: white;
 }
 
@@ -105,7 +105,7 @@ main {
 }
 
 .game-category.active-item {
-    background-color: var(--primary-color-all);
+    background-color: var(--primary-color-game);
     color: white;
 }
 
