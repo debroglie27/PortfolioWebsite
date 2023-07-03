@@ -41,12 +41,6 @@ main {
     cursor: pointer;
 }
 
-.active-item {
-    -webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.4);
-    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.4);
-}
-
 /* All Category */
 .all-category {
     border-color: var(--primary-color-all);
@@ -54,6 +48,11 @@ main {
 }
 
 .all-category:hover {
+    background-color: var(--primary-color-all);
+    color: white;
+}
+
+.all-category.active-item {
     background-color: var(--primary-color-all);
     color: white;
 }
@@ -69,6 +68,11 @@ main {
     color: white;
 }
 
+.web-category.active-item {
+    background-color: var(--primary-color-all);
+    color: white;
+}
+
 /* Software Category */
 .software-category {
     border-color: var(--primary-color-software);
@@ -77,6 +81,11 @@ main {
 
 .software-category:hover {
     background-color: var(--primary-color-software);
+    color: white;
+}
+
+.software-category.active-item {
+    background-color: var(--primary-color-all);
     color: white;
 }
 
@@ -90,6 +99,12 @@ main {
     background-color: var(--primary-color-game);
     color: white;
 }
+
+.game-category.active-item {
+    background-color: var(--primary-color-all);
+    color: white;
+}
+
 
 /* Project Grid Container */
 .grid-container {
