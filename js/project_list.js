@@ -2,9 +2,7 @@ const projectList = [
     {
         title: "Portfolio Website",
         category: "web",
-        summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
-        Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
-        rerum ratione magnam nam quod.",
+        summary: "This project is a web version of my resume. The website which you are viewing right now is itself the project. This was made using vanilla HTML, CSS and Javascript.",
         link: "https://github.com/debroglie27/Portfolio_Website",
     },
     {
