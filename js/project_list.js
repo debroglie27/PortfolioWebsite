@@ -8,6 +8,30 @@ const projectList = [
         link: "https://github.com/debroglie27/Portfolio_Website",
     },
     {
+        title: "PDF Merger App",
+        category: "software",
+        summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
+        Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
+        rerum ratione magnam nam quod.",
+        link: "https://github.com/debroglie27/PDFMergerApp",
+    },
+    {
+        title: "Currency Converter App",
+        category: "software",
+        summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
+        Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
+        rerum ratione magnam nam quod.",
+        link: "https://github.com/debroglie27/CurrencyConverterApp",
+    },
+    {
+        title: "Ludo Game",
+        category: "game",
+        summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
+        Laboriosam dolores qui aperiam impedit? Recu sandae doloribus, \
+        rerum ratione magnam nam quod.",
+        link: "https://github.com/debroglie27/LudoGame",
+    },
+    {
         title: "Age Calculator App",
         category: "web",
         summary: "Lorem ipsum, dolor sit amet conse ctetur adipi sicing elit. \
