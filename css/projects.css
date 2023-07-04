@@ -25,6 +25,68 @@ main {
     padding: 30px 10px;
 }
 
+
+/* ################## Category Dropdown Container ##################*/
+.category-dropdown-container {
+    background-color: white;
+    height: 35px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.selection {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.selection:after {
+    content: "";
+    width: 12px;
+    height: 8px;
+    background-color: #333;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.option-container {
+    background-color: white;
+    width: 100%;
+    display: none;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    overflow: hidden;
+}
+
+.option-container li {
+    padding: 8px 10px;
+}
+
+.option-container li:hover {
+    background-color: #efefef;
+}
+
+.highlight-selection {
+    border: 2px solid #777777;
+}
+
+.show-options {
+    display: block;
+}
+
+
+/* ####################### Category Container #######################*/
 .category-container {
     width: 100%;
     font-size: 0.95rem;
@@ -110,7 +172,7 @@ main {
 }
 
 
-/* Project Grid Container */
+/* ######################## Project Grid Container #######################*/
 .grid-container {
     width: 100%;
     display: grid;
@@ -183,6 +245,10 @@ main {
 
 
 @media screen and (min-width: 490px) {
+    .category-dropdown-container {
+        display: none;
+    }
+
     .category-container {
         display: flex;
     }

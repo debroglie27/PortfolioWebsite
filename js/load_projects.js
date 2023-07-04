@@ -1,5 +1,10 @@
 import { projectList } from "./project_list.js";
 
+const allOption = document.querySelector('#all');
+const webOption = document.querySelector('#web');
+const softwareOption = document.querySelector('#software');
+const gameOption = document.querySelector('#game');
+
 const allCategory = document.querySelector('.all-category');
 const webCategory = document.querySelector('.web-category');
 const softwareCategory = document.querySelector('.software-category');
@@ -53,6 +58,7 @@ function loadProjects(category) {
     });
 }
 
+// For Simple Menu Category
 function changeCategory() {
     // Removing the active-item class from current category
     document.querySelector('.active-item').classList.remove('active-item');
@@ -63,9 +69,26 @@ function changeCategory() {
     loadProjects(this.id);
 }
 
+// Event listeners for Menu Category
 allCategory.addEventListener('click', changeCategory);
 webCategory.addEventListener('click', changeCategory);
 softwareCategory.addEventListener('click', changeCategory);
 gameCategory.addEventListener('click', changeCategory);
+
+
+// For Dropdown Menu
+function changeOption() {
+    // Changing the Text Content of Selection
+    selection.textContent = this.textContent;
+
+    // Loading Projects of the Category selected
+    loadProjects(this.id);
+}
+
+// Event listeners for Dropdown Options
+allOption.addEventListener('click', changeOption);
+webOption.addEventListener('click', changeOption);
+softwareOption.addEventListener('click', changeOption);
+gameOption.addEventListener('click', changeOption);
 
 loadProjects("all");
