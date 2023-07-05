@@ -31,10 +31,10 @@ main {
 }
 
 .main-content h2 {
-    color: #21a0cf;
-    font-size: 1.35rem;
+    color: #2457be;
+    font-size: 1.38rem;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .programming-container {
@@ -44,10 +44,18 @@ main {
 .programming-container ul{
     width: 100%;
     display: flex;
+    font-size: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 20px;
-    column-gap: 40px;
+    column-gap: 30px;
+}
+
+.programming-container ul li {
+    color: #555555;
+    padding: 5px 12px;
+    border: 1px solid #2fcc4e;
+    border-radius: 5px;
 }
 
 .grid-container {
@@ -70,7 +78,7 @@ main {
 }
 
 .card-container h3 {
-    color: #5bb547;
+    color: #2fcc4e;
     font-size: 1.1rem;
 }
 
@@ -105,11 +113,11 @@ main {
 }
 
 .link-container .link {
-    color: #829db5;
+    color: #858585;
 }
 
 .link-container .link:hover {
-    color: #014c91;
+    color: #03a9fc;
 }
 
 @media screen and (min-width:600px) {
@@ -123,12 +131,17 @@ main {
     }
 
     .main-content h2 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
+        font-size: 1.55rem;
+        margin-bottom: 25px;
     }
 
     .programming-container {
         margin-bottom: 30px;
+    }
+
+    .programming-container ul {
+        padding: 5px 0;
+        font-size: 1.1rem;
     }
 
     .grid-container {
