@@ -13,8 +13,10 @@ const gameCategory = document.querySelector('.game-category');
 const gridContainer = document.querySelector(".grid-container");
 
 function createCardContainer(title, category, summary, link) {
-    const cardContainer = document.createElement('div');
+    const cardContainer = document.createElement('a');
     cardContainer.classList.add('card-container');
+    cardContainer.setAttribute('href', link);
+    cardContainer.setAttribute('target', '_blank');
 
     const headerContainer = document.createElement('div');
     headerContainer.classList.add('header-container');
@@ -32,14 +34,7 @@ function createCardContainer(title, category, summary, link) {
     projectSummary.classList.add('summary');
     projectSummary.textContent = summary;
 
-    const linkAnchor = document.createElement('a');
-    linkAnchor.classList.add('link');
-    linkAnchor.setAttribute('href', link);
-    linkAnchor.setAttribute('target', '_blank');
-    linkAnchor.textContent = "GitHub Link";
-
     textContainer.appendChild(projectSummary);
-    textContainer.appendChild(linkAnchor);
 
     cardContainer.appendChild(headerContainer);
     cardContainer.appendChild(textContainer);
