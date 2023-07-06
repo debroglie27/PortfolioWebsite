@@ -96,24 +96,23 @@
 }
 
 .dropdown-menu.open {
-    height: 300px;
+    height: 270px;
     opacity: 100%;
 }
 
 .dropdown-menu a {
     font-size: 1.1rem;
     color: var(--color-nav-links);
-    height: 50px;
+    height: 45px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-bottom: 1px solid var(--color-dropdown-menu-border);
 }
 
 .dropdown-menu a:hover {
-    transform: scale(1.15);
+    background-color: #f6f6f6;
 }
 
 
