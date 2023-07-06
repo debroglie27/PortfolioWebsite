@@ -1,3 +1,7 @@
+:root {
+    --button-primary-color: #863dad;
+}
+
 /* Main */
 main {
     display: flex;
@@ -9,7 +13,7 @@ main {
 
 .main-content {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +21,7 @@ main {
 }
 
 .text-container {
-    max-width: 550px;
+    max-width: 500px;
 }
 
 .text-container h1 {
@@ -27,16 +31,39 @@ main {
 
 .text-container h2 {
     color: #2fcc4e;
+    margin-bottom: 18px;
+}
+
+.text-container .intro-para {
+    color: #444444;
     margin-bottom: 20px;
-}
-
-.text-container .intro-para-1 {
-    margin-bottom: 10px;
     text-align: justify;
 }
 
-.text-container .intro-para-2 {
-    text-align: justify;
+.button-container {
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.button-container a {
+    border: 2px solid var(--button-primary-color);
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.button-container .hire-me, .button-container .know-more:hover{
+    background-color: var(--button-primary-color);
+    color: white;
+}
+
+.button-container .know-more, .button-container .hire-me:hover {
+    background-color: white;
+    color: var(--button-primary-color);
 }
 
 .image-container{
@@ -59,6 +86,16 @@ main {
 
     .text-container h2 {
         font-size: 1.9rem;
+    }
+
+    .button-container {
+        font-size: 1rem;
+        justify-content: flex-start;
+        gap: 35px;
+    }
+
+    .button-container a {
+        padding: 9px 18px;
     }
 
     .image-container {
