@@ -74,7 +74,7 @@ main {
 }
 
 .option-container li:hover {
-    background-color: #efefef;
+    background-color: #f6f6f6;
 }
 
 .highlight-selection {
@@ -196,7 +196,7 @@ main {
 }
 
 .card-container:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .card-container .header-container {
