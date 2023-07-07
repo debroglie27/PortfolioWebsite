@@ -1,17 +1,11 @@
 import { projectList } from "./project_list.js";
 
-const allOption = document.querySelector('#all');
-const webOption = document.querySelector('#web');
-const softwareOption = document.querySelector('#software');
-const gameOption = document.querySelector('#game');
-
-const allCategory = document.querySelector('.all-category');
-const webCategory = document.querySelector('.web-category');
-const softwareCategory = document.querySelector('.software-category');
-const gameCategory = document.querySelector('.game-category');
+const optionList = document.querySelectorAll('.option-container li');
+const categoryList = document.querySelectorAll('.category-container li');
 
 const gridContainer = document.querySelector(".grid-container");
 
+// Creates Card Container for each project
 function createCardContainer(title, category, summary, link) {
     const cardContainer = document.createElement('a');
     cardContainer.classList.add('card-container');
@@ -42,6 +36,7 @@ function createCardContainer(title, category, summary, link) {
     gridContainer.appendChild(cardContainer);
 }
 
+// Function responsible for loading the projects based on category
 function loadProjects(category) {
     gridContainer.innerHTML = '';
 
@@ -53,6 +48,15 @@ function loadProjects(category) {
     });
 }
 
+// For Dropdown Menu
+function changeOption() {
+    // Changing the Text Content of Selection
+    selection.textContent = this.textContent;
+
+    // Loading Projects of the Category selected
+    loadProjects(this.type);
+}
+
 // For Simple Menu Category
 function changeCategory() {
     // Removing the active-item class from current category
@@ -61,29 +65,19 @@ function changeCategory() {
     this.classList.add('active-item');
 
     // Loading Projects of the Category selected
-    loadProjects(this.id);
+    loadProjects(this.type);
 }
 
-// Event listeners for Menu Category
-allCategory.addEventListener('click', changeCategory);
-webCategory.addEventListener('click', changeCategory);
-softwareCategory.addEventListener('click', changeCategory);
-gameCategory.addEventListener('click', changeCategory);
-
-
-// For Dropdown Menu
-function changeOption() {
-    // Changing the Text Content of Selection
-    selection.textContent = this.textContent;
-
-    // Loading Projects of the Category selected
-    loadProjects(this.id);
-}
 
 // Event listeners for Dropdown Options
-allOption.addEventListener('click', changeOption);
-webOption.addEventListener('click', changeOption);
-softwareOption.addEventListener('click', changeOption);
-gameOption.addEventListener('click', changeOption);
+optionList.forEach((option) => {
+    option.addEventListener('click', changeOption);
+});
+
+// Event listeners for Menu Category
+categoryList.forEach((category) => {
+    category.addEventListener('click', changeCategory);
+});
+
 
 loadProjects("all");
