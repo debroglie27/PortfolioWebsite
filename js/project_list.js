@@ -3,7 +3,7 @@ const projectList = [
         title: "Portfolio Website",
         category: "web",
         summary: "This project is a web version of my resume. The website which you are viewing right now is itself the project. This was made using vanilla HTML, CSS and Javascript.",
-        link: "https://github.com/debroglie27/Portfolio_Website",
+        link: "https://github.com/debroglie27/PortfolioWebsite",
     },
     {
         title: "PDF Merger App",
