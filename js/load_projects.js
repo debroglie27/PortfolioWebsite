@@ -54,7 +54,7 @@ function changeOption() {
     selection.textContent = this.textContent;
 
     // Loading Projects of the Category selected
-    loadProjects(this.type);
+    loadProjects(this.id.toLowerCase());
 }
 
 // For Simple Menu Category
@@ -65,7 +65,7 @@ function changeCategory() {
     this.classList.add('active-item');
 
     // Loading Projects of the Category selected
-    loadProjects(this.type);
+    loadProjects(this.id.toLowerCase());
 }
 
 
