@@ -19,7 +19,6 @@ function createCardContainer(title, institute, link) {
     const linkAnchor = document.createElement('a');
     linkAnchor.classList.add('link');
     linkAnchor.setAttribute('href', link);
-    linkAnchor.setAttribute('target', '_blank');
     linkAnchor.textContent = "link";
 
     linkContainer.appendChild(instituteParagraph);

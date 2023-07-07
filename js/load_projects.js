@@ -10,7 +10,6 @@ function createCardContainer(title, category, summary, link) {
     const cardContainer = document.createElement('a');
     cardContainer.classList.add('card-container');
     cardContainer.setAttribute('href', link);
-    cardContainer.setAttribute('target', '_blank');
 
     const headerContainer = document.createElement('div');
     headerContainer.classList.add('header-container');
