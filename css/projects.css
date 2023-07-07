@@ -2,7 +2,7 @@
     --primary-color-all: #e30202;
     --primary-color-web: #2d45b3;
     --primary-color-software: #9e2eb8;
-    --primary-color-game: #008f0a;
+    --primary-color-game: #127518;
 
     --secondary-color-web: #a8b0ff;
     --secondary-color-software: #eea8ff;
@@ -229,6 +229,7 @@ main {
 }
 
 .card-container .text-container {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,6 +239,7 @@ main {
 }
 
 .text-container .summary {
+    color: #444444;
     font-size: 0.92rem;
     text-align: center;
 }
