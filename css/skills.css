@@ -1,12 +1,4 @@
 /* Main */
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-grow: 1;
-}
-
 .main-content {
     display: flex;
     flex-direction: column;

@@ -43,6 +43,14 @@ nav {
     transition: height 0.3s ease;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
 footer {
     background-color: var(--color-footer);
     width: 100%;

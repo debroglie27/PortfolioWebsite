@@ -1,12 +1,4 @@
 /* Main */
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-grow: 1;
-}
-
 .main-content {
     width: 100%;
     padding: 15px 20px 15px 20px;
