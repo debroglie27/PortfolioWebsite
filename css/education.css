@@ -1,7 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
 /* Main */
-.main-content {
+.hero {
+    background: linear-gradient(12deg, #d4e5ff 2%, #f7faff 28%, #ffffff 40%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 120px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    width: 450px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    color: #2d4bb0;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.hero-text p {
+    color: #444444;
+    font-size: 0.94rem;
+}
+
+.icon-container img {
+    width: 250px;
+}
+
+.grid-container {
     display: grid;
     padding: 25px 8px;
     grid-template-columns: 1fr;
@@ -115,7 +147,7 @@
 }
 
 @media screen and (min-width:600px){
-    .main-content {
+    .grid-container {
         gap: 24px;
         padding: 40px 8px;
     }
@@ -176,7 +208,7 @@
 }
 
 @media screen and (min-width:900px){
-    .main-content {
+    .grid-container {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }

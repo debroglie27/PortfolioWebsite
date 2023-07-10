@@ -1,8 +1,8 @@
 /* Navbar */
 :root {
     --color-nav-header-h1: #0036a1;
-    --color-nav-links: rgb(0, 55, 165);
-    --color-nav-links-underline: rgb(0, 55, 165);
+    --color-nav-links: rgb(106, 22, 170);
+    --color-nav-links-underline: rgb(91, 9, 163);
     --color-dropdown-menu-border: #efefef;
 
     --box-shadow-dropdown-menu: 0px 0px 10px 0px rgba(0,0,0,0.12);
