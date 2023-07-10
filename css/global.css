@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
 
 :root {
-    --color-footer: #effceb;
-    --box-shadow-footer: 0px 8px 23px 0px rgba(0,0,0,0.16);
+    --bg-nav: transparent;
+    --bg-footer: rgb(244, 251, 255);
 }
 
 *,
@@ -33,14 +33,13 @@ a {
 }
 
 nav {
-    background-image: linear-gradient(90deg, rgb(176, 203, 255) 10%, rgb(231, 238, 255) 40%, rgb(243, 246, 255) 50%, rgb(255, 255, 255) 100%);
+    background: var(--bg-nav);
     display: flex;
     position: relative;
     width: 100%;
     height: 50px;
     align-items: center;
     justify-content: space-between;
-    transition: height 0.3s ease;
 }
 
 main {
@@ -52,9 +51,14 @@ main {
 }
 
 footer {
-    background-color: var(--color-footer);
+    background-color: var(--bg-footer);
     width: 100%;
-    height: 60px;
+    height: 70px;
     transition: height 0.3s ease;
-    box-shadow: var(--box-shadow-footer);
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        height: 80px;
+    }
 }

@@ -3,20 +3,21 @@
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 12px;
-    transition: gap 0.3s ease, padding 0.3s ease;
+    gap: 25px;
+    padding: 10px 20px;
+    transition: gap 0.3s ease;
+    margin: auto;
 }
 
 .social-icons i {
-    scale: 1.4;
+    scale: 1.6;
     transition: scale 0.3s ease;
     cursor: pointer;
 }
@@ -49,28 +50,22 @@
     color: #0A66C2;
 }
 
-.footer-container .copyright {
-    font-size: 0.65rem;
+.copyright {
+    color: #001e76;
+    font-size: 0.7rem;
+    margin-bottom: 2px;
 }
 
 @media screen and (min-width: 800px) {
-    footer {
-        height: 70px;
-        transition: height 0.3s ease;
-    }
-
     .social-icons {
         gap: 30px;
-        padding: 15px;
-        transition: gap 0.3s ease, padding 0.3s ease;
     }
 
     .social-icons i {
-        scale: 1.7;
-        transition: scale 0.3s ease;
+        scale: 1.8;
     }
 
-    .footer-container .copyright {
-        font-size: 0.75rem;
+    .copyright {
+        font-size: 0.8rem;
     }
 }
