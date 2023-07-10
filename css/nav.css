@@ -1,8 +1,8 @@
 /* Navbar */
 :root {
-    --color-nav-header-h1: #2457be;
-    --color-nav-links: purple;
-    --color-nav-links-underline: #7a08cc;
+    --color-nav-header-h1: #01318f;
+    --color-nav-links: rgb(37, 85, 181);
+    --color-nav-links-underline: rgb(37, 85, 181);
     --color-dropdown-menu-border: #efefef;
 
     --box-shadow-dropdown-menu: 0px 0px 10px 0px rgba(0,0,0,0.12);
@@ -42,7 +42,7 @@
 }
 
 .nav-links a {
-    height: 85%;
+    height: 100%;
     font-size: 1.1rem;
     color: var(--color-nav-links);
     display: flex;
@@ -137,7 +137,7 @@
     }
 
     .nav-links a {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         margin: 0 6px;
         padding: 0 6px;
     }
