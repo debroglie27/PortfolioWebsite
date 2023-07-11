@@ -1,5 +1,8 @@
 :root {
+    --h1-color: #2457be;
+    --h2-color: #2fcc4e;
     --button-primary-color: #863dad;
+    --button-secondary-color: white;
 }
 
 /* Main */
@@ -17,12 +20,12 @@
 }
 
 .text-container h1 {
-    color: #2457be;
+    color: var(--h1-color);
     margin-bottom: 5px;
 }
 
 .text-container h2 {
-    color: #2fcc4e;
+    color: var(--h2-color);
     margin-bottom: 18px;
 }
 
@@ -50,11 +53,11 @@
 
 .button-container .hire-me, .button-container .know-more:hover{
     background-color: var(--button-primary-color);
-    color: white;
+    color: var(--button-secondary-color);
 }
 
 .button-container .know-more, .button-container .hire-me:hover {
-    background-color: white;
+    background-color: var(--button-secondary-color);
     color: var(--button-primary-color);
 }
 
