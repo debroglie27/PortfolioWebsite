@@ -9,6 +9,7 @@
     background-color: #e1ebff;
     border-radius: 4px;
     color: #444444;
+    font-size: 1.4rem;
     margin-bottom: 18px;
     padding: 5px;
     text-align: center;
@@ -22,10 +23,9 @@
 }
 
 .card-container {
-    min-width: 350px;
     background-color: white;
     border-radius: 8px;
-    padding: 12px;
+    padding: 15px;
     position: relative;
     overflow: hidden;
     -webkit-box-shadow: 0 0 20px -10px rgba(0,0,0,0.4);
@@ -47,7 +47,7 @@
 }
 
 .image-container img {
-    width: 95px;
+    width: 96px;
     border-radius: 50%;
     border: 1px solid black;
 }
@@ -60,13 +60,13 @@
 }
 
 .text-container h3 {
-    font-size: 1.33rem;
+    font-size: 1.35rem;
     font-weight: normal;
     font-family: 'Kalam', cursive;
 }
 
 .text-container h4 {
-    font-size: 1.15rem;
+    font-size: 1.18rem;
     color: #2457be;
     margin-bottom: 12px;
 }
@@ -93,7 +93,7 @@
     color: white;
     font-size: 0.8rem;
     padding: 7px 10px 7px 10px;
-    margin-left: 35px;
+    margin-left: 30px;
     margin-right: 25px;
     text-align: center;
 }
@@ -132,9 +132,13 @@
 }
 
 @media screen and (min-width:600px){
+    .btech-container h2, .school-container h2 {
+        font-size: 1.8rem;
+    }
+
     .card-container {
         min-width: 380px;
-        padding: 15px;
+        padding: 18px;
     }
 
     .image-container {
@@ -161,6 +165,7 @@
     .marks-btn {
         font-size: 0.9rem;
         padding: 8px 13px;
+        margin-left: 35px;
         margin-right: 30px;
     }
 
