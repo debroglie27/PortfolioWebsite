@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(8deg, #d4e5ff 2%, #f7faff 30%, #ffffff 50%);
+    background: linear-gradient(0deg, #d4e5ff 2%, #f7faff 30%, #ffffff 50%);
     width: 100%;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
 
 .hero-main {
     width: 100%;
-    max-width: 800px;
+    max-width: 785px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +40,7 @@
 
 .hero-image img {
     width: 200px;
+    border-radius: 15px;
 }
 
 
@@ -76,6 +77,6 @@
     }
 
     .hero-image img {
-        width: 240px;
+        width: 250px;
     }
 }
