@@ -1,10 +1,10 @@
 .hero {
-    background: linear-gradient(0deg, #d4e5ff 2%, #f7faff 30%, #ffffff 50%);
+    background: linear-gradient(0deg, #d4e5ff 2%, #f7faff 28%, #ffffff 50%);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 15px 30px 15px;
+    padding: 30px 15px 38px 15px;
     margin-bottom: 20px;
 }
 
@@ -25,13 +25,21 @@
 .hero-text h1 {
     color: #2d4bb0;
     font-size: 2.6rem;
-    margin-bottom: 8px;
-    font-weight: normal;
+    font-weight: 400;
+    font-family: 'Kalam', cursive;
 }
 
-.hero-text p {
-    color: #444444;
+.hero-text .quote {
+    color: #111111;
+    font-size: 0.94rem;
+    margin-bottom: 4px;
+}
+
+.hero-text .author {
+    color: #333333;
     font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
 }
 
 .hero-image {
@@ -45,7 +53,7 @@
 
 @media screen and (min-width: 600px) {
     .hero {
-        padding: 40px 20px 30px 20px;
+        padding: 35px 20px;
         margin-bottom: 30px;
     }
 
@@ -69,11 +77,15 @@
 
     .hero-text h1 {
         font-size: 3.2rem;
-        margin-bottom: 10px;
     }
 
-    .hero-text p {
-        font-size: 0.94rem;
+    .hero-text .quote {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .hero-text .author {
+        font-size: 0.96rem;
     }
 
     .hero-image img {
