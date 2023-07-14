@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap');
+
 .hero {
     background: linear-gradient(0deg, #d4e5ff 2%, #f7faff 28%, #ffffff 50%);
     width: 100%;
@@ -5,7 +7,7 @@
     align-items: center;
     justify-content: center;
     padding: 30px 15px 45px 15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .hero-main {
@@ -31,13 +33,13 @@
 
 .hero-text .quote {
     color: #111111;
-    font-size: 0.94rem;
+    font-size: 0.96rem;
     margin-bottom: 4px;
 }
 
 .hero-text .author {
     color: #333333;
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     font-style: italic;
     text-align: center;
 }

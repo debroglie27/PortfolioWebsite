@@ -14,32 +14,50 @@
     <link rel="manifest" href="../Images/favicon_io/site.webmanifest">
 
     <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/hero.css">
     <link rel="stylesheet" href="../css/projects.css" />
   </head>
   <body>
     <nav></nav>
 
     <main>
-      <div class="main-content">
-        <div class="category-dropdown-container">
-          <div class="selection">All</div>
-          <ul class="option-container">
-            <li id="all">All</li>
-            <li id="web">Web Apps</li>
-            <li id="software">Software Apps</li>
-            <li id="game">Game Apps</li>
-          </ul>
+      <section class="hero">
+        <div class="hero-main">
+          <div class="hero-text">
+            <h1>My Projects</h1>
+            <p class="quote">
+              <q>Great things are done by a series of small things 
+                brought together.</q>
+            </p>
+            <p class="author">- Vincent Van Gogh</p>
+          </div>
+          <div class="hero-image">
+            <img src="../Images/Project.png" alt="Project Icon" />
+          </div>
         </div>
+      </section>
 
-        <ul class="category-container">
+      <section class="category-dropdown-container">
+        <div class="selection">All</div>
+        <ul class="options">
+          <li id="all">All</li>
+          <li id="web">Web Apps</li>
+          <li id="software">Software Apps</li>
+          <li id="game">Game Apps</li>
+        </ul>
+      </section>
+
+      <section class="category-container">
+        <ul class="categories">
           <li id="All" class="all-category category-item active-item">All</li>
           <li id="Web" class="web-category category-item">Web Apps</li>
           <li id="Software" class="software-category category-item">Software Apps</li>
           <li id="Game" class="game-category category-item">Game Apps</li>
         </ul>
+      </section>
 
+      <section class="main-content">
         <div class="grid-container">
-
           <!-- <div class="card-container">
             <div class="header-container">
               <h2>Project Title</h2>
@@ -50,12 +68,10 @@
                 Laboriosam dolores qui aperiam impedit? Recu sandae doloribus,
                 rerum ratione magnam nam quod.
               </p>
-              <a href="#" class="link">GitHub Link</a>
             </div>
           </div> -->
-          
         </div>
-      </div>
+      </section>
     </main>
 
     <footer></footer>

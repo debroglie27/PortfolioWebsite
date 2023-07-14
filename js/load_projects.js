@@ -1,7 +1,7 @@
 import { projectList } from "./project_list.js";
 
-const optionList = document.querySelectorAll('.option-container li');
-const categoryList = document.querySelectorAll('.category-container li');
+const optionList = document.querySelectorAll('.options li');
+const categoryList = document.querySelectorAll('.categories li');
 
 const gridContainer = document.querySelector(".grid-container");
 

@@ -1,5 +1,5 @@
 const selection = document.querySelector('.selection');
-const optionContainer = document.querySelector('.option-container');
+const optionContainer = document.querySelector('.options');
 
 
 selection.addEventListener('click', function (event) {

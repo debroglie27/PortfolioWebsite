@@ -1,7 +1,7 @@
 :root {
     --primary-color-all: #e30202;
     --primary-color-web: #2d45b3;
-    --primary-color-software: #9e2eb8;
+    --primary-color-software: #9a23b4;
     --primary-color-game: #009b0a;
 
     --secondary-color-web: #a8b0ff;
@@ -10,24 +10,19 @@
 }
 
 /* Main */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 10px;
+section {
+    margin-bottom: 30px;
 }
-
 
 /* ################## Category Dropdown Container ##################*/
 .category-dropdown-container {
     background-color: white;
     height: 35px;
-    width: 100%;
-    font-size: 1.15rem;
+    width: 300px;
+    font-size: 1.12rem;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
-    margin-bottom: 30px;
     z-index: 1;
 }
 
@@ -49,7 +44,7 @@
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
-.option-container {
+.options {
     background-color: white;
     width: 100%;
     display: none;
@@ -61,11 +56,11 @@
     overflow: hidden;
 }
 
-.option-container li {
+.options li {
     padding: 8px 10px;
 }
 
-.option-container li:hover {
+.options li:hover {
     background-color: #f6f6f6;
 }
 
@@ -85,9 +80,14 @@
     display: none;
     justify-content: center;
     align-items: center;
-    gap: 25px;
     padding: 10px 0;
-    margin-bottom: 30px;
+}
+
+.category-container .categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 
 .category-item {
@@ -181,9 +181,9 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    -webkit-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.3);
     cursor: pointer;
 }
 
@@ -234,7 +234,6 @@
 .text-container .summary {
     color: #444444;
     font-size: 1rem;
-    /* text-align: center; */
 }
 
 
@@ -250,25 +249,29 @@
 
 
 @media screen and (min-width: 650px) {
-    .main-content {
-        padding: 45px 0;
-    }
-    
-    .category-container {
+    section.category-container {
         font-size: 1.06rem;
+        margin-bottom: 35px;
+    }
+
+    .category-container .categories {
         gap: 35px;
-        margin-bottom: 40px;
     }
 
     .grid-container {
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 25px;
     }
 }
 
 
 @media screen and (min-width: 980px) {
+    section.main-content {
+        margin-bottom: 40px;
+    }
+
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
     }
 }
