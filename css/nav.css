@@ -1,6 +1,6 @@
 /* Navbar */
 :root {
-    --color-nav-header-h1: #0036a1;
+    --color-nav-header-h2: #0036a1;
     --color-nav-links: rgb(106, 22, 170);
     --color-nav-links-underline: rgb(91, 9, 163);
     --color-dropdown-menu-border: #efefef;
@@ -16,11 +16,11 @@
     justify-content: center;
 }
 
-.nav-header h1 {
+.nav-header h2 {
     font-size: 1.55rem;
     transition: 0.3s ease;
     font-family: 'Fragment Mono', monospace;
-    color: var(--color-nav-header-h1);
+    color: var(--color-nav-header-h2);
 }
 
 .nav-links {
@@ -131,7 +131,7 @@
 
 
 @media screen and (min-width: 800px) {
-    .nav-header h1 {
+    .nav-header h2 {
         font-size: 1.7rem;
     }
 
