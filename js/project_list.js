@@ -43,39 +43,53 @@ const projectList = [
     },
     {
         id: 7,
-        title: "Paint App",
-        category: "software",
-        summary: "Created an app to make beautiful and mesmerizing paintings.",
-        link: "https://github.com/debroglie27/PaintApp",
-    },
-    {
-        id: 8,
         title: "Age Calculator App",
         category: "web",
         summary: "Created a web page, displaying age based on date of birth, with simple HTML, CSS and JS.",
         link: "https://github.com/debroglie27/AgeCalculatorApp",
     },
     {
+        id: 8,
+        title: "Paint App",
+        category: "software",
+        summary: "Created an app to make beautiful and mesmerizing paintings.",
+        link: "https://github.com/debroglie27/PaintApp",
+    },
+    {
         id: 9,
+        title: "Color Guesser",
+        category: "web",
+        summary: "Created a web game, to guess randomly generated colors, with simple HTML, CSS and JS.",
+        link: "https://github.com/debroglie27/ColorGuesser",
+    },
+    {
+        id: 10,
         title: "QR Code Component",
         category: "web",
         summary: "Designed a web page based on a FrontEnd Mentor challenge.",
         link: "https://github.com/debroglie27/QRCodeComponent",
     },
     {
-        id: 10,
+        id: 11,
         title: "Single Price Grid Component",
         category: "web",
         summary: "Designed a web page based on a FrontEnd Mentor challenge.",
         link: "https://github.com/debroglie27/SinglePriceGridComponent",
     },
     {
-        id: 11,
+        id: 12,
         title: "Testimonials Grid Section",
         category: "web",
         summary: "Designed a web page based on a FrontEnd Mentor challenge.",
         link: "https://github.com/debroglie27/TestimonialsGridSection",
     },
+    {
+        id: 13,
+        title: "Meme Generator",
+        category: "web",
+        summary: "Designed a web page, which generates memes, quotes and riddles, with simple HTML, CSS & JS.",
+        link: "https://github.com/debroglie27/MemeGenerator",
+    }
 ];
 
 export {projectList};
