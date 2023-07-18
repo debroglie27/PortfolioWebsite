@@ -13,7 +13,6 @@ Welcome to my Portfolio Website. Get to know about me by going through my websit
   - [Skills Page](#skills-page)
   - [Contact Page](contact-page)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Introduction
