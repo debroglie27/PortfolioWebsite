@@ -26,7 +26,7 @@ The Website is basically a web version of my Resume.
 
 ### Home Page
 
-This page gives a basic introduction about me.  
+This page gives a basic introduction and mesmerizes the viewer.  
 [Home Page Link](https://debroglie27.github.io/PortfolioWebsite/html/home.html)
 
 ### About Page
