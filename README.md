@@ -51,7 +51,14 @@ This page has information about my programming skills and certifications that I 
 
 ### Contact Page
 
-This page allows viewers to contact me using various methods.  
+This page allows viewers to contact me using various methods like:  
+- WhatsApp
+- Gmail
+- LinkedIn
+- Messenger
+- Telegram
+- Instagram
+
 [Contact Page Link](https://debroglie27.github.io/PortfolioWebsite/html/contact.html)
 
 
