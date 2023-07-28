@@ -95,7 +95,7 @@ section {
     border-width: 2px;
     border-style: solid;
     border-radius: 8px;
-    padding: 8px 15px;
+    padding: 5px 12px;
     cursor: pointer;
 }
 
@@ -256,6 +256,10 @@ section {
 
     .category-container .categories {
         gap: 35px;
+    }
+
+    .category-item {
+        padding: 7px 15px;
     }
 
     .grid-container {
