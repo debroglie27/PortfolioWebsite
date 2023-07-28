@@ -18,7 +18,7 @@ section {
 .category-dropdown-container {
     background-color: white;
     height: 35px;
-    width: 300px;
+    width: 290px;
     font-size: 1.12rem;
     border-radius: 5px;
     position: relative;
@@ -95,7 +95,7 @@ section {
     border-width: 2px;
     border-style: solid;
     border-radius: 8px;
-    padding: 5px 12px;
+    padding: 8px 15px;
     cursor: pointer;
 }
 
@@ -176,7 +176,7 @@ section {
 .card-container {
     background-color: white;
     border-radius: 10px;
-    width: 300px;
+    width: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,8 +250,8 @@ section {
 
 @media screen and (min-width: 650px) {
     section.category-container {
-        font-size: 1.06rem;
-        margin-bottom: 35px;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
     }
 
     .category-container .categories {
