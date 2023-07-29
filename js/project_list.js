@@ -11,14 +11,21 @@ const projectList = [
         title: "PDF Merger App (Tkinter Python)",
         category: "software",
         summary: "Created a GUI using Tkinter, Python to merge pdf files in noncontiguous manner.",
-        link: "https://github.com/debroglie27/PDFMergerApp",
+        link: "https://github.com/debroglie27/PDFMergerPython",
     },
     {
         id: 3,
         title: "PDF Merger App (Electron JS)",
         category: "software",
         summary: "Created a GUI using ElectronJS to merge pdf files in noncontiguous manner.",
-        link: "https://github.com/debroglie27/PDFMergerApp",
+        link: "https://github.com/debroglie27/PDFMergerElectronJS",
+    },
+    {
+        id: 4,
+        title: "Weather App",
+        category: "web",
+        summary: "Created a a Webpage, to view weather information, using an API.",
+        link: "https://github.com/debroglie27/WeatherApp",
     },
     {
         id: 4,
