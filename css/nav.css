@@ -9,18 +9,17 @@
 }
 
 .nav-header {
-    width: 180px;
+    width: 145px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav-header h2 {
-    font-size: 1.55rem;
-    transition: 0.3s ease;
-    font-family: 'Fragment Mono', monospace;
-    color: var(--color-nav-header-h2);
+.nav-header img {
+    width: 120px;
+    margin-top: 5px;
+    transition: width 0.3s ease;
 }
 
 .nav-links {
@@ -131,8 +130,9 @@
 
 
 @media screen and (min-width: 800px) {
-    .nav-header h2 {
-        font-size: 1.7rem;
+    .nav-header img {
+        width: 130px;
+        margin-top: 8px;
     }
 
     .nav-links a {
